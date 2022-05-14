@@ -1,9 +1,16 @@
+import axios from "axios";
 import MovieCard from "Components/MovieCard";
 import MovieScore from "Components/MovieScore";
 import MovieStars from "Components/MovieStars";
 import Pagination from "Components/Pagination";
+import {BASE_URL} from "Utils/requests";
 
 function Listing (){
+
+  //forma errada
+  axios.get (`${BASE_URL}/movies`).then(response =>{
+    console.log(response.data)
+  })
 
   return(
     <>
