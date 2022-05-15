@@ -1,5 +1,8 @@
 import { ReactComponent as Arrow} from 'Assets/img/arrow.svg';
+import { MoviePage } from 'Type/movie';
 import './Style.css';
+
+
 
 function Pagination (){
   return(
